@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Cloudiness</title>
+    <style>
+        nav.navbar {
+            background: #F8F9FA;
+        }
+        @media (max-width: 991px) {
+            nav.navbar {
+            background: #0BADA6;
+            padding:0px;
+            border:0px;
+            margin:0px;
+            }
+            
+        }           
+        .navbar-light .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='gray' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        h2 {
+            color: #0BADA6;
+            font-family:'Times New Roman', Times, serif;
+            font-weight:bold; 
+            
+        }
+        h5 {
+          line-height: 1.8;
+          text-align:justify;
+        }
+        body {
+            background-color:#EDEDED;
+        }
+        
+    </style>
+
+  </head>
+  <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding-top: 0px; padding-bottom: 0px;">
+                
+                <a class="navbar-brand" style="background-color:#0BADA6; color:#F8F9FA; font-family:'Times New Roman', Times, serif; font-size:28px; font-weight: bold; margin-left: 6%; " href="index.html">&nbsp&nbspLatitude&nbsp&nbsp</a>
+                
+
+                <button style = "border-color: white; margin-right:50px;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon" ></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="background-color:#F8F9FA;">
+
+                  <ul class="navbar-nav" >
+                           
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    &nbsp&nbsp&nbspPlots
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                              <a class="dropdown-item" href="humidity.html">Humidity</a>
+                              <a class="dropdown-item" href="cloudines.html">Cloudiness</a>
+                              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>                        
+                            </div>
+                          </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="Comparison.html">&nbsp&nbsp&nbspComparison</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">&nbsp&nbsp&nbspData</a>
+                    </li>
+                        
+                  </ul>
+
+                 
+                </div>
+        </nav>
+        
+
+        <div style="margin: 2%;">
+            <div class="row">
+                <div class="col-lg-7" style = "background-color:white; margin: 2%; padding:2%;">
+                    <h2>Summary: Latitude vs. X <hr></h2>
+                    <img src="llat_vs_cloudiness.png" width = 100% style="padding: 0 15px; float: left;"><br><br>
+                    <h5>
+                            We did not have many instances reported from cities located in latitude between -60 and -45. As well as 75 and 85. For that reason, we cannot make a strong statement for those locations. Nevertheless, for other locations we can make a statement that there is no correlation between cloudiness and latitude of the city. We can notice there are many cities with 0% cloudiness at any latitude. Similarly many cities has high rate of cloudiness (above 75%) at any latitude. There should be some other correlations like cloudiness vs. time of the day or cloudiness vs time of the year. However, that research possibly will be conducted in future. <br> <br>
+                     
+                    </h5>
+                </div>
+
+                <div class="col-lg-4 " style = "background-color:#EDEDED; padding:0px; margin: 2%;">
+                        <div style = "background-color:white; padding:6%">
+                    <h2>Visualizations <hr> </h2>
+                    
+                    <div class="col-md-12 col-sm-12 text-center">
+                            <a href="max_temp.html"> <img src="lat_vs_temp.png" width = 180  ></a>
+                            <a href="humidity.html"><img src="lat_vs_humidity.png" width = 180></a>
+                            <a href="cloudines.html"><img src="lat_vs_cloudiness.png" width = 180 style="border:3px solid #0BADA6"></a>
+                            <a href="windspeed.html"><img src="lat_vs_windspeed.png" width = 180></a>
+                    </div>   
+                    </div>                
+                    
+                    
+                  </div>
+
+
+
+            </div>
+
+        </div>
+        
+    
+
